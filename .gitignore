@@ -1,23 +1,60 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# Dependency directories
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
-/coverage
-
-# production
+# Built files
 /build
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Development server files
+/.docusaurus
+/.cache
+/public
 
+# Output of create-react-app
+/build
+
+# dotenv environment variables file
+.env
+
+# OS-specific files and directories
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.idea
+.vscode
+
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Mac files
+.AppleDouble
+.DS_Store
+.LSOverride
+
+# Windows files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*/
+
+# Environment files
+.env.local
+.env.development
+.env.test
+.env.production
+
+# .env* files should be ignored
+.env*
+
+# ESLint
+.eslintcache
+
+# Prettier
+prettier.config.js
+.prettierignore
