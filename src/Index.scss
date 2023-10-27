@@ -13,3 +13,6 @@ body {
     text-decoration: none;
     color: black;
   }
+  *{/** the * mean that it will be apply too everything that match */
+    box-sizing:border-box;
+  }
