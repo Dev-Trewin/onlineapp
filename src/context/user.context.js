@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import {onAuthStateChangedListener} from '../utils/firebase/firebase.utils';
+import {createUserDocumentFromAuth, onAuthStateChangedListener} from '../utils/firebase/firebase.utils';
 // this is the actual value that i wanto to access
 export const UserContext=createContext({
   currentUser:null,
@@ -15,6 +15,9 @@ export const UserProvider = ({children})=>{
                   // meaning that I only want to run this function once when the component mounts.
                  
                  const unsubscribe= onAuthStateChangedListener((user)=>{
+                  if(user){
+                    createUserDocumentFromAuth(user)
+                  }
                  console.log(user);
                  setCurrentUser(user);
                  });
