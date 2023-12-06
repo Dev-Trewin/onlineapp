@@ -36,7 +36,7 @@ const Navigation = () => {
           )}
           <CartIcon />
         </div>
-        {isCartOpen && <CartDropdown />}
+        {isCartOpen && <CartDropdown />}{/* So, the entire expression means "if isCartOpen is true, render the CartDropdown component; otherwise, do nothing." It's a concise way of conditionally rendering components in React based on the value of a boolean variable. */}
       </div>
       <Outlet />
     </Fragment>

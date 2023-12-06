@@ -6,7 +6,7 @@ import './cart-icon.style.scss'
 const CartIcon = () => {
   const { isCartOpen, setIsCartOpen } = useContext(CartContext);
   console.log("value of isCartOpen :" + isCartOpen )
-  const toggleIsCartOpen = () => {setIsCartOpen(!isCartOpen)};
+  const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen);{/*!isCartOpen: The exclamation mark (!) is the logical NOT operator. It negates the boolean value, so if isCartOpen is true, !isCartOpen will be false, and vice versa. */}
 
   return (
     <div className='cart-icon-container' onClick={toggleIsCartOpen}>
