@@ -9,7 +9,7 @@ const addCartItem=(cartItems,productToAdd)=>{
 
   if(existingCartItem){
     return cartItems.map((cartItem)=>cartItem.id=== productToAdd.id ?// If we found item return a new array of a cartItems
-    { ...cartItem,quantity:cartItem.quantity +1} 
+    { ...cartItem,quantity:cartItem.quantity + 1} 
     : cartItem//if this not the case just return the original cartItem
     )
   }
@@ -21,6 +21,7 @@ export const CartContext = createContext({
   setIsOpen: () => {},
   cartItem:[],
   addItemToCart:()=>{},
+  removeItemFromCart:()=>{},
   cartCount:0
   
 });
