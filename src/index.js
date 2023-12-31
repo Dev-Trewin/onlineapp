@@ -9,7 +9,7 @@ import reportWebVitals from './reportWebVitals';
 import { CartProvider } from './context/cart.context';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+<React.StrictMode>
     <BrowserRouter>
       <UserProvider>
         <CategoriesProvider>
@@ -19,7 +19,8 @@ root.render(
         </CategoriesProvider>
       </UserProvider>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
+
 );
 
 // If you want to start measuring performance in your app, pass a function
