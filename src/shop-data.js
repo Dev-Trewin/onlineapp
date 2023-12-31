@@ -194,7 +194,7 @@ const SHOP_DATA = [
     ],
   },
   {
-    title: 'Mens',
+    title: 'Shorts',
     items: [
       {
         id: 30,

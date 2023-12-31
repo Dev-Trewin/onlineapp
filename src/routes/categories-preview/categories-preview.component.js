@@ -1,13 +1,13 @@
-import { Fragment, useContext } from "react";
+import {  useContext } from "react";
 import { CategoriesContext } from "../../context/categories.context";
 import CategoryPreview from "../../components/category-preview/category-preview.component";
-import "./shop.styles.scss";
+import "./categories-preview.styles.scss";
 
-const Shop = () => {
+const CategoriesPreview = () => {
   const { categoriesMap } = useContext(CategoriesContext);
 
   return (
-    <div className='shop-container'>
+    <div className='categories-preview-'>
       {Object.keys(categoriesMap).map((key) => {
         const products = categoriesMap[key];
         return <CategoryPreview key={key} title={key} products={products} />;
@@ -16,4 +16,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default CategoriesPreview;
