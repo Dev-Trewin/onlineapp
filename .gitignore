@@ -9,7 +9,7 @@
 # Development server files
 /.docusaurus
 /.cache
-!public/_redirects
+
 # Output of create-react-app
 /build
 
